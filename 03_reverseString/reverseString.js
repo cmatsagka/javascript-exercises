@@ -1,9 +1,9 @@
 let wordLength = 0;
-let newWord = "";
 
 const reverseString = function(word) {
     wordLength = word.length;
-
+    let newWord = "";
+    
     for (i = wordLength-1; i >= 0; i--) {
         newWord += word[i];
     }
