@@ -1,7 +1,7 @@
-const removeFromArray = function(items, item1, item2) {
+const removeFromArray = function(items, ...theArgs) {
 
     function isIncluded(item) {
-        if (item !== item1 && item !== item2){
+        if (!theArgs.includes(item)) {
             return item;
         }
     }
