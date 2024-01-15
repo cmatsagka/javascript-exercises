@@ -1,12 +1,12 @@
 const sumAll = function(startRange, endRange) {
-    let i = startRange;
     let sum = 0;
+    let min = Math.min(startRange, endRange);
+    let max = Math.max(startRange, endRange);
     
-    while (i <= endRange){
+    for (i = min; i<= max; i++){
         sum += i;
-        i++;
     }
-
+    
     return sum;
 };
 
