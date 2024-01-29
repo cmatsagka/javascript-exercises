@@ -3,6 +3,8 @@ const palindromes = function (str) {
     str = str.replace(/[^\w\s\']|_/g, "")
          .replace(/\s+/g, " ");
 
+    str = str.split(' ').join('');
+
     let strRev = str.split('').reverse().join('');
     let arr = str.split('');
 
