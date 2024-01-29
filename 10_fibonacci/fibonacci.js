@@ -1,7 +1,7 @@
 const fibonacci = function(index) {
     let a = 0;
     let b = 1;
-    let preSum = a + b; //preSum = 1 a = b b = preSum
+    let preSum;
 
     if (index > 0){
         for (i = 1; i < index; i++){
@@ -14,7 +14,6 @@ const fibonacci = function(index) {
     }else {
         preSum = "OOPS";
     }
-    
     return preSum;
 };
 
